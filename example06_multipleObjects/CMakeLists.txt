@@ -11,6 +11,8 @@ add_executable(ex06_multipleObjects
   SampleRenderer.h
   SampleRenderer.cpp
   main.cpp
+  #
+  devicePrograms.slang
   )
 
 target_link_libraries(ex06_multipleObjects

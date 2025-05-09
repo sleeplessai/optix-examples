@@ -11,6 +11,8 @@ add_executable(ex05_firstSBTData
   SampleRenderer.h
   SampleRenderer.cpp
   main.cpp
+  #
+  devicePrograms.slang
   )
 
 target_link_libraries(ex05_firstSBTData

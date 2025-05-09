@@ -11,6 +11,8 @@ add_executable(ex03_testFrameInWindow
   SampleRenderer.h
   SampleRenderer.cpp
   main.cpp
+  #
+  devicePrograms.slang
   )
 
 target_link_libraries(ex03_testFrameInWindow

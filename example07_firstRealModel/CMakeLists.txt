@@ -12,6 +12,8 @@ add_executable(ex07_firstRealModel
   SampleRenderer.cpp
   Model.cpp
   main.cpp
+  #
+  devicePrograms.slang
   )
 
 target_link_libraries(ex07_firstRealModel

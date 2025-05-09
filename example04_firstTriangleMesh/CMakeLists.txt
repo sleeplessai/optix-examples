@@ -11,6 +11,8 @@ add_executable(ex04_firstTriangleMesh
   SampleRenderer.h
   SampleRenderer.cpp
   main.cpp
+  #
+  devicePrograms.slang
   )
 
 target_link_libraries(ex04_firstTriangleMesh

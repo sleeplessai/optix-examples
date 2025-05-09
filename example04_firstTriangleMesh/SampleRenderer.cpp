@@ -312,14 +312,14 @@ namespace osc {
       
     char log[2048];
     size_t sizeof_log = sizeof( log );
-    OPTIX_CHECK(optixModuleCreateFromPTX(optixContext,
-                                         &moduleCompileOptions,
-                                         &pipelineCompileOptions,
-                                         ptxCode.c_str(),
-                                         ptxCode.size(),
-                                         log,&sizeof_log,
-                                         &module
-                                         ));
+    OPTIX_CHECK(optixModuleCreate(optixContext,
+                                  &moduleCompileOptions,
+                                  &pipelineCompileOptions,
+                                  ptxCode.c_str(),
+                                  ptxCode.size(),
+                                  log,&sizeof_log,
+                                  &module
+                                  ));
     if (sizeof_log > 1) PRINT(log);
   }
     
@@ -385,7 +385,7 @@ namespace osc {
     OptixProgramGroupDesc pgDesc    = {};
     pgDesc.kind                     = OPTIX_PROGRAM_GROUP_KIND_HITGROUP;
     pgDesc.hitgroup.moduleCH            = module;           
-    pgDesc.hitgroup.entryFunctionNameCH = "__closesthit__closesthit_radiance";
+    pgDesc.hitgroup.entryFunctionNameCH = "__closesthit__triangle_radiance";
     pgDesc.hitgroup.moduleAH            = module;           
     pgDesc.hitgroup.entryFunctionNameAH = "__anyhit__anyhit_radiance";
 

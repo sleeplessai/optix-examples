@@ -9,6 +9,8 @@ add_executable(ex02_pipelineAndRayGen
   SampleRenderer.h
   SampleRenderer.cpp
   main.cpp
+  #
+  devicePrograms.slang
   )
 target_link_libraries(ex02_pipelineAndRayGen
   ${optix_LIBRARY}

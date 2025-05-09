@@ -12,6 +12,8 @@ add_executable(ex08_addingTextures
   SampleRenderer.cpp
   Model.cpp
   main.cpp
+  #
+  devicePrograms.slang
   )
 
 target_link_libraries(ex08_addingTextures
